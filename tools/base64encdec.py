@@ -1,10 +1,7 @@
 import base64
 
 def encode(unencoded: str):
-    tempunencoded = unencoded.encode("ascii")
-    base64_bytes = base64.b64encode(tempunencoded)
-    return base64.b64encode(tempunencoded).decode("ascii")
+    return base64.b64encode(unencoded.encode("ascii")).decode("ascii")
 
 def decode(undecoded: str):
-    undecoded_string = undecoded.encode("ascii")
-    return base64.b64decode(undecoded_string).decode("ascii")
+    return base64.b64decode(undecoded.encode("ascii")).decode("ascii")

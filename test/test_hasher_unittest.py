@@ -3,7 +3,7 @@ import sys
 sys.path.append("..")
 from tools import hasher
 
-class TestBase64encdec(unittest.TestCase):
+class TestHasher(unittest.TestCase):
     def test_hashmd5(self):
         self.assertEqual(hasher.hashmd5("hello world"), "5eb63bbbe01eeed093cb22bb8f5acdc3")
     
